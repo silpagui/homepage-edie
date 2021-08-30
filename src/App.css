@@ -102,7 +102,6 @@ body {
 
 .contact__highlight {
   color: #828282;
-
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 9px;
@@ -112,16 +111,12 @@ body {
   border: none;
   background: transparent;
   flex-grow: 1;
+  padding: 15px 0 15px 21px;
+  font-family: "Poppins", sans-serif;
 }
 
 .contact__form input::placeholder {
   color: #bdbdbd;
-  /* NOTE: en general no se pone ni padding ni margin en el placeholder 
-  este tipo de selector se suele usar para cosas sencillas como cambiar 
-  el color, la tipografia en general la hereda del input
-  */
-  padding: 15px 0 15px 21px;
-  font-family: "Poppins", sans-serif;
 }
 
 .button {

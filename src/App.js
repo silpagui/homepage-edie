@@ -59,18 +59,16 @@ export function App() {
               will outperform your toughest competition and help you achieve
               your strategic goals in short period of time.
             </p>
-            {/* TODO: creo que este div "contact" esta de mas */}
-            {/* NOTE: No usar clases si no tiene estilos */}
-            <div className="contact">
-              {/* TODO: el highlight deberia ser un label dentro del form */}
-              <p className="contact__highlight">Want us to contact you?</p>
-              <form className="contact__form">
-                <input type="email" placeholder="Email" />
-                <button className="button" type="button">
-                  Join
-                </button>
-              </form>
-            </div>
+
+            <label for="contact" className="contact__highlight">
+              Want us to contact you?
+            </label>
+            <form className="contact__form">
+              <input type="email" id="contact" placeholder="Email" />
+              <button className="button" type="button">
+                Join
+              </button>
+            </form>
           </article>
         </div>
       </section>
@@ -266,12 +264,12 @@ export function App() {
               </defs>
             </svg>
           </div>
-          <div className="contact">
-            <p className="contact__highlight contact__highlight--footer ">
+          <div>
+            <label for="contact" className="contact__highlight">
               Want us to contact you?
-            </p>
+            </label>
             <form className="contact__form">
-              <input type="email" placeholder="Email" />
+              <input type="email" id="contact" placeholder="Email" />
               <button className="button" type="button">
                 Join
               </button>
