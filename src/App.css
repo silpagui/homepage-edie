@@ -284,9 +284,11 @@ body {
   align-items: center;
 }
 
-/* TODO: tener cuidado con margin-right, esta afectando a todas las imagenes dentro */
 .team-members img {
   border-radius: 24px;
+}
+
+.team-members__member {
   margin-right: 24px;
 }
 
@@ -311,11 +313,10 @@ body {
   display: flex;
 }
 
-/* TODO: con las imagenes, cuando ponemos width: X%, o max-width: Xpx, es bueno
-tambien ponerle height: auto, para que automaticamente se ajuste al alto
-*/
 .client {
+  display: block;
   max-width: 82px;
+  height: 100%;
   border-radius: 12px;
   margin-right: 30px;
 }
@@ -331,6 +332,7 @@ tambien ponerle height: auto, para que automaticamente se ajuste al alto
   line-height: 27px;
   color: #828282;
 }
+
 /* --------------------------------------------------- */
 .footer {
   color: #ffffff;
