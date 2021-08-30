@@ -50,8 +50,7 @@ export function App() {
         </div>
         <img src={heroSRC} alt="heroImage" className="heroImage" />
         <div className="home-description central-col-alignment">
-          {/* TODO: este div podria ser un articulo, asi como la clase se llama "article-alignment" estas instintivamente llamandolo articule */}
-          <div className="article-alignment">
+          <article className="article-alignment">
             <h2 className="home-description__title">
               Story, emotion and purpose
             </h2>
@@ -72,7 +71,7 @@ export function App() {
                 </button>
               </form>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
