@@ -75,9 +75,8 @@ export function App() {
 
       <section className="services-section central-wrapper" id="services">
         <h2 className="title ">We offer high demand services</h2>
-        {/* TODO: convertiria este div en un ul, y los .service en li */}
-        <div className="services-section__services">
-          <div className="service service__1">
+        <ul className="services-section__services">
+          <li className="service service__1">
             <img src={pencilSRC} alt="service" />
             <h3 className="service__title">UI/UX Design</h3>
             <p className="service__description">
@@ -85,8 +84,8 @@ export function App() {
               metus ac nulla consequat aliquet id quis turpis.
             </p>
             <button className="button">Get Started</button>
-          </div>
-          <div className="service service__2">
+          </li>
+          <li className="service service__2">
             <img src={bracketsSRC} alt="service" />
             <h3 className="service__title">Front End</h3>
             <p className="service__description">
@@ -94,8 +93,8 @@ export function App() {
               metus ac nulla consequat aliquet id quis turpis.
             </p>
             <button className="button">Get Started</button>
-          </div>
-          <div className="service service__3">
+          </li>
+          <li className="service service__3">
             <img src={backendSRC} alt="service" />
             <h3 className="service__title">Back End</h3>
             <p className="service__description">
@@ -103,8 +102,8 @@ export function App() {
               metus ac nulla consequat aliquet id quis turpis.
             </p>
             <button className="button">Get Started</button>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section className="work-section central-wrapper" id="our-work">
         <h2 className="title">Good design means good business</h2>
