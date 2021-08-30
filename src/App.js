@@ -13,7 +13,6 @@ import pencilSRC from "../src/assets/pencil.svg";
 import backendSRC from "../src/assets/backend.svg";
 import bracketsSRC from "../src/assets/brackets.svg";
 
-// TODO: Revisar consola y resolver errores y subir a git
 export function App() {
   return (
     <div className="central-page-alignment">
@@ -42,45 +41,42 @@ export function App() {
           </ul>
         </nav>
       </header>
-      {/* TODO: todo el home deberia estar dentro de un section */}
-      <div className="home central-col-alignment" id="home">
-        <span className="home__highlight">Unhappy with your website?</span>
-        <h2 className="home__title">
-          We create beautiful and fast web services
-        </h2>
-      </div>
-      <img src={heroSRC} alt="heroImage" className="heroImage" />
-      {/* TODO: remover id, no lo estas usando en ningun lugar */}
-      <div
-        className="home-description central-col-alignment"
-        id="home-description"
-      >
-        {/* TODO: este div podria ser un articulo, asi como la clase se llama "article-alignment" estas instintivamente llamandolo articule */}
-        <div className="article-alignment">
-          <h2 className="home-description__title">
-            Story, emotion and purpose
+      <section className="home" id="home">
+        <div className="central-col-alignment">
+          <span className="home__highlight">Unhappy with your website?</span>
+          <h2 className="home__title">
+            We create beautiful and fast web services
           </h2>
-          <p className="home-description__text">
-            We help transform your ideas into real world applications that will
-            outperform your toughest competition and help you achieve your
-            strategic goals in short period of time.
-          </p>
-          {/* TODO: creo que este div "contact" esta de mas */}
-          {/* NOTE: No usar clases si no tiene estilos */}
-          <div className="contact">
-            {/* TODO: el highlight deberia ser un label dentro del form */}
-            <p className="contact__highlight">Want us to contact you?</p>
-            <form className="contact__form">
-              <input type="email" placeholder="Email" />
-              <button className="button" type="button">
-                Join
-              </button>
-            </form>
+        </div>
+        <img src={heroSRC} alt="heroImage" className="heroImage" />
+        <div className="home-description central-col-alignment">
+          {/* TODO: este div podria ser un articulo, asi como la clase se llama "article-alignment" estas instintivamente llamandolo articule */}
+          <div className="article-alignment">
+            <h2 className="home-description__title">
+              Story, emotion and purpose
+            </h2>
+            <p className="home-description__text">
+              We help transform your ideas into real world applications that
+              will outperform your toughest competition and help you achieve
+              your strategic goals in short period of time.
+            </p>
+            {/* TODO: creo que este div "contact" esta de mas */}
+            {/* NOTE: No usar clases si no tiene estilos */}
+            <div className="contact">
+              {/* TODO: el highlight deberia ser un label dentro del form */}
+              <p className="contact__highlight">Want us to contact you?</p>
+              <form className="contact__form">
+                <input type="email" placeholder="Email" />
+                <button className="button" type="button">
+                  Join
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      {/* TODO: asi como en las clases llamaste "algo-section" eso te infiere que en vez de un div uses un "section" tag */}
-      <div className="services-section central-wrapper" id="services">
+      </section>
+
+      <section className="services-section central-wrapper" id="services">
         <h2 className="title ">We offer high demand services</h2>
         {/* TODO: convertiria este div en un ul, y los .service en li */}
         <div className="services-section__services">
@@ -112,8 +108,8 @@ export function App() {
             <button className="button">Get Started</button>
           </div>
         </div>
-      </div>
-      <div className="work-section central-wrapper" id="our-work">
+      </section>
+      <section className="work-section central-wrapper" id="our-work">
         <h2 className="title">Good design means good business</h2>
         <div className="works">
           <div className="works__item">
@@ -139,7 +135,7 @@ export function App() {
           </div>
         </div>
         <div className="work-section__more">
-          <a href="">see more</a>
+          <a href="#/">see more</a>
           <svg
             width="16"
             height="7"
@@ -153,9 +149,9 @@ export function App() {
             />
           </svg>
         </div>
-      </div>
+      </section>
 
-      <div className="team-section central-wrapper">
+      <section className="team-section central-wrapper">
         <div className="team">
           <span className="team__highlight">Meet the team</span>
           <h2 className="title">We are chilled and a laidback team</h2>
@@ -174,8 +170,8 @@ export function App() {
             <img src={person2SRC} alt="team member" />
           </div>
         </div>
-      </div>
-      <div className="reviews-section central-wrapper">
+      </section>
+      <section className="reviews-section central-wrapper">
         <p className="title">
           “Fast and outstanding resutls. Edie understands their customer’s
           needs. They have a young and talented team.”
@@ -189,7 +185,7 @@ export function App() {
             </span>
           </div>
         </div>
-      </div>
+      </section>
       <footer className="footer " id="footer">
         <div className="footer-alignment">
           <div className="footer__nav">

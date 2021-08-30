@@ -55,9 +55,9 @@ body {
 
 .home__title {
   max-width: 543px;
-
   font-size: 48px;
   line-height: 72px;
+  margin-bottom: 42px;
 }
 
 .heroImage {
