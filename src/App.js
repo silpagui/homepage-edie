@@ -264,11 +264,11 @@ export function App() {
             </svg>
           </div>
           <div>
-            <label for="contact" className="contact__highlight">
+            <label for="contact-footer" className="contact__highlight--footer">
               Want us to contact you?
             </label>
             <form className="contact__form">
-              <input type="email" id="contact" placeholder="Email" />
+              <input type="email" id="contact-footer" placeholder="Email" />
               <button className="button" type="button">
                 Join
               </button>

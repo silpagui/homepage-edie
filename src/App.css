@@ -98,13 +98,13 @@ body {
   border-radius: 12px;
   border-color: transparent;
   padding: 4px;
+  margin-top: 9px;
 }
 
 .contact__highlight {
   color: #828282;
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 9px;
 }
 
 .contact__form input {
@@ -168,12 +168,8 @@ body {
   justify-content: space-between;
 }
 
-/* TODO: esto deberia tener un width % por que si el usuario
-escribe menos texto, las columnas van a variar su tamaño
-Ponerle transition asi cuando aparezca la sombra sea con 
-animacion
-*/
 .service {
+  width: 33.33333%;
   padding: 46px 34px;
   cursor: pointer;
 }
@@ -210,10 +206,11 @@ animacion
 }
 
 .item-highlight {
+  display: block;
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
-  margin-top: 5px;
+  margin-top: 20px;
   color: #828282;
 }
 
@@ -222,33 +219,19 @@ animacion
   line-height: 36px;
 }
 
-/* .works__item, */
 .works {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-/* TODO: 
-Si estoy pensando en usar flex-direction: column; puede ser por: 
-1. Necesito alinear algo verticalmente
-2. Necesito expandir elementos verticalmente gracias al flex 
-3. Necesito cambiar el order de los elementos verticalmente 
-Si no necesito nada de lo enunciado anteriormente, seguramente
-flex-direction: column; & display: flex; no es necesario. 
-
-*/
 .works__item {
-  /* flex-direction: column; */
   width: 50%;
 }
 
-/* TODO: Las imagenes por defecto funcionan como inline
-eso significa que si quiero que se comporte como bloque
-appropiadamente, voy a tener que decirle que sea block
-*/
 .works__item img {
   border-radius: 12px;
+  display: block;
 }
 
 .work-position {
