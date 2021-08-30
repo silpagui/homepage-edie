@@ -341,6 +341,12 @@ body {
   padding-bottom: 24px;
 }
 
+.footer__nav,
+.footer__social-media,
+.footer__contact {
+  width: 33.33333%;
+}
+
 .footer-alignment {
   max-width: 1135px;
   margin: 0 auto;
@@ -398,10 +404,6 @@ body {
     padding: 13px 19px 24px;
   }
 
-  .header {
-    padding: 0;
-  }
-
   .article-alignment {
     margin: 0 auto;
   }
@@ -420,7 +422,8 @@ body {
     position: static;
   }
 
-  .works {
+  .works,
+  .footer-alignment {
     flex-direction: column;
     align-items: center;
   }
@@ -428,18 +431,38 @@ body {
   .works__item {
     margin-bottom: 36px;
   }
+
   .works__item:last-child {
     margin-bottom: 0;
   }
 
   .team-section {
     flex-direction: column;
+    margin-bottom: 100px;
+    align-items: center;
   }
 
   .team {
+    max-width: none;
     margin-bottom: 36px;
   }
+
   .team-members {
-    max-width: 350px;
+    max-width: none;
+  }
+
+  .footer-alignment {
+    margin-bottom: 154px;
+  }
+
+  .footer__nav,
+  .footer__social-media,
+  .footer__contact {
+    width: 50%;
+  }
+
+  .footer__nav,
+  .footer__social-media {
+    margin-bottom: 64px;
   }
 }
