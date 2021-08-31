@@ -285,6 +285,7 @@ body {
 }
 
 .team-members img {
+  display: block;
   border-radius: 24px;
 }
 
@@ -293,7 +294,6 @@ body {
 }
 
 .team-members__group img:first-of-type {
-  display: block;
   width: 80%;
   margin-bottom: 24px;
 }
@@ -409,13 +409,17 @@ body {
   }
 
   .services-section__services {
-    flex-direction: column;
-    align-items: center;
+    display: block;
+  }
+
+  .title {
+    margin: 0 auto;
   }
 
   .service {
     margin-bottom: 14px;
-    max-width: 341px;
+    width: 341px;
+    margin: 0 auto;
   }
 
   .work-position {
@@ -430,6 +434,7 @@ body {
 
   .works__item {
     margin-bottom: 36px;
+    width: auto;
   }
 
   .works__item:last-child {
@@ -439,7 +444,6 @@ body {
   .team-section {
     flex-direction: column;
     margin-bottom: 100px;
-    align-items: center;
   }
 
   .team {
@@ -447,8 +451,12 @@ body {
     margin-bottom: 36px;
   }
 
-  .team-members {
-    max-width: none;
+  .team .title {
+    margin: 0;
+  }
+
+  .team-members img {
+    width: 50%;
   }
 
   .footer-alignment {
@@ -464,5 +472,25 @@ body {
   .footer__nav,
   .footer__social-media {
     margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header__nav-bar {
+    display: none;
+  }
+
+  .footer__nav,
+  .footer__social-media,
+  .footer__contact {
+    width: 80%;
+  }
+
+  .works {
+    display: block;
+  }
+
+  .works__item img {
+    width: 90%;
   }
 }

@@ -107,7 +107,10 @@ export function App() {
           </li>
         </ul>
       </section>
-      <section className="work-section central-wrapper" id="our-work">
+      <section
+        className="work-section central-wrapper central-page-alignment"
+        id="our-work"
+      >
         <h2 className="title">Good design means good business</h2>
         <div className="works">
           <div className="works__item">
@@ -149,7 +152,7 @@ export function App() {
         </div>
       </section>
 
-      <section className="team-section central-wrapper">
+      <section className="team-section central-wrapper central-page-alignment">
         <div className="team">
           <span className="team__highlight">Meet the team</span>
           <h2 className="title">We are chilled and a laidback team</h2>
