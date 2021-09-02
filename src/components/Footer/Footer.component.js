@@ -1,4 +1,5 @@
 import React from "react";
+import { Nav } from "../Nav/Nav.component";
 // import "./Footer.styles.css";
 
 export function Footer() {
@@ -6,23 +7,7 @@ export function Footer() {
     <footer className="footer " id="footer">
       <div className="footer-alignment">
         <div className="footer__nav">
-          <ul>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#services">Services</a>
-            </li>
-            <li>
-              <a href="#our-work">Our Work</a>
-            </li>
-            <li>
-              <a href="#clients">Clients</a>
-            </li>
-            <li>
-              <a href="#footer">Contact</a>
-            </li>
-          </ul>
+          <Nav />
         </div>
         <div className="footer__social-media">
           <h2>Edie</h2>
