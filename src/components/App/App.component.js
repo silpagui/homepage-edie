@@ -1,18 +1,19 @@
 import React from "react";
-import "./App.css";
-import heroSRC from "../src/assets/heroImage.jpg";
-import smartSRC from "../src/assets/smarthome.jpg";
-import bookingSRC from "../src/assets/booking.png";
-import onboardSRC from "../src/assets/onboard.png";
-import juiceSRC from "../src/assets/juice-product.png";
-import person1SRC from "../src/assets/person1.png";
-import person2SRC from "../src/assets/person2.png";
-import person3SRC from "../src/assets/person3.png";
-import person4SRC from "../src/assets/person4.png";
-import pencilSRC from "../src/assets/pencil.svg";
-import backendSRC from "../src/assets/backend.svg";
-import bracketsSRC from "../src/assets/brackets.svg";
-import navSRC from "../src/assets/nav.svg";
+import "./App.styles.css";
+import heroSRC from "../../assets/heroImage.jpg";
+import smartSRC from "../../assets/smarthome.jpg";
+import bookingSRC from "../../assets/booking.png";
+import onboardSRC from "../../assets/onboard.png";
+import juiceSRC from "../../assets/juice-product.png";
+import person1SRC from "../../assets/person1.png";
+import person2SRC from "../../assets/person2.png";
+import person3SRC from "../../assets/person3.png";
+import person4SRC from "../../assets/person4.png";
+import pencilSRC from "../../assets/pencil.svg";
+import backendSRC from "../../assets/backend.svg";
+import bracketsSRC from "../../assets/brackets.svg";
+
+import { Header } from "../Header/Header.component";
 
 export function App() {
   return (
@@ -20,32 +21,8 @@ export function App() {
       {/* TODO: cuando sea mobile hacer burguer nav que se comporte asi https://tympanus.net/Development/OffCanvasMenuEffects/sideslide.html 
       recordar que en esta pagina tienen que aparecer de derecha a izquierda
       */}
-      <header className="header central-page-alignment">
-        <h1 className="header__title">Edie</h1>
-        <button className="menu-button">
-          <img src={navSRC} alt="nav button" />
-        </button>
 
-        <nav className="header__nav-bar">
-          <ul>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#services">Services</a>
-            </li>
-            <li>
-              <a href="#our-work">Our Work</a>
-            </li>
-            <li>
-              <a href="#clients">Clients</a>
-            </li>
-            <li>
-              <a href="#footer">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <section className="home central-page-alignment" id="home ">
         <div className="central-col-alignment">
           <span className="home__highlight">Unhappy with your website?</span>
