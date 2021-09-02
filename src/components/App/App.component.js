@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.styles.css";
 
-import person4SRC from "../../assets/person4.png";
-
 import { Header } from "../Header/Header.component";
 import { Home } from "../Home/Home.component";
 import { Services } from "../Services/Services.component";
 import { Works } from "../Works/Works.component";
 import { Team } from "../Team/Team.component";
+import { Clients } from "../Clients/Clients.component";
 
 export function App() {
   return (
@@ -21,21 +20,7 @@ export function App() {
       <Services />
       <Works />
       <Team />
-      <section className="reviews-section central-wrapper central-page-alignment">
-        <p className="title">
-          “Fast and outstanding resutls. Edie understands their customer’s
-          needs. They have a young and talented team.”
-        </p>
-        <div className="review-client" id="clients">
-          <img className="client" src={person4SRC} alt="client" />
-          <div>
-            <h4 className="review-client__title">Carlos Tran</h4>
-            <span className="review-client__description">
-              The Decorate Gatsby
-            </span>
-          </div>
-        </div>
-      </section>
+      <Clients />
       <footer className="footer " id="footer">
         <div className="footer-alignment">
           <div className="footer__nav">
