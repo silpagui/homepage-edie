@@ -5,7 +5,7 @@ import heroSRC from "../../assets/heroImage.jpg";
 
 export function Home() {
   return (
-    <section className="home central-page-alignment" id="home ">
+    <section className="home central-page-alignment" id="home">
       <div className="central-col-alignment">
         <span className="home__highlight">Unhappy with your website?</span>
         <h2 className="home__title">

@@ -1,15 +1,13 @@
 import React from "react";
 import "./App.styles.css";
 
-import person1SRC from "../../assets/person1.png";
-import person2SRC from "../../assets/person2.png";
-import person3SRC from "../../assets/person3.png";
 import person4SRC from "../../assets/person4.png";
 
 import { Header } from "../Header/Header.component";
 import { Home } from "../Home/Home.component";
 import { Services } from "../Services/Services.component";
 import { Works } from "../Works/Works.component";
+import { Team } from "../Team/Team.component";
 
 export function App() {
   return (
@@ -22,33 +20,13 @@ export function App() {
       <Home />
       <Services />
       <Works />
-
-      <section className="team-section central-wrapper central-page-alignment">
-        <div className="team">
-          <span className="team__highlight">Meet the team</span>
-          <h2 className="title">We are chilled and a laidback team</h2>
-          <p className="team-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div className="team-members">
-          <img
-            className="team-members__member"
-            src={person3SRC}
-            alt="team member"
-          />
-          <div className="team-members__group">
-            <img src={person1SRC} alt="team member" />
-            <img src={person2SRC} alt="team member" />
-          </div>
-        </div>
-      </section>
+      <Team />
       <section className="reviews-section central-wrapper central-page-alignment">
         <p className="title">
           “Fast and outstanding resutls. Edie understands their customer’s
           needs. They have a young and talented team.”
         </p>
-        <div className="review-client">
+        <div className="review-client" id="clients">
           <img className="client" src={person4SRC} alt="client" />
           <div>
             <h4 className="review-client__title">Carlos Tran</h4>
