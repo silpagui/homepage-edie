@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.styles.css";
-import heroSRC from "../../assets/heroImage.jpg";
+
 import smartSRC from "../../assets/smarthome.jpg";
 import bookingSRC from "../../assets/booking.png";
 import onboardSRC from "../../assets/onboard.png";
@@ -9,11 +9,10 @@ import person1SRC from "../../assets/person1.png";
 import person2SRC from "../../assets/person2.png";
 import person3SRC from "../../assets/person3.png";
 import person4SRC from "../../assets/person4.png";
-import pencilSRC from "../../assets/pencil.svg";
-import backendSRC from "../../assets/backend.svg";
-import bracketsSRC from "../../assets/brackets.svg";
 
 import { Header } from "../Header/Header.component";
+import { Home } from "../Home/Home.component";
+import { Services } from "../Services/Services.component";
 
 export function App() {
   return (
@@ -23,72 +22,9 @@ export function App() {
       */}
 
       <Header />
-      <section className="home central-page-alignment" id="home ">
-        <div className="central-col-alignment">
-          <span className="home__highlight">Unhappy with your website?</span>
-          <h2 className="home__title">
-            We create beautiful and fast web services
-          </h2>
-        </div>
-        <img src={heroSRC} alt="heroImage" className="heroImage" />
-        <div className="home-description central-col-alignment">
-          <article className="article-alignment">
-            <h2 className="home-description__title">
-              Story, emotion and purpose
-            </h2>
-            <p className="home-description__text">
-              We help transform your ideas into real world applications that
-              will outperform your toughest competition and help you achieve
-              your strategic goals in short period of time.
-            </p>
-            <label htmlFor="contact" className="contact__highlight">
-              Want us to contact you?
-            </label>
-            <form className="contact__form">
-              <input type="email" id="contact" placeholder="Email" />
-              <button className="button" type="button">
-                Join
-              </button>
-            </form>
-          </article>
-        </div>
-      </section>
+      <Home />
+      <Services />
 
-      <section
-        className="services-section central-wrapper central-page-alignment"
-        id="services"
-      >
-        <h2 className="title ">We offer high demand services</h2>
-        <ul className="services-section__services">
-          <li className="service service__1">
-            <img src={pencilSRC} alt="service" />
-            <h3 className="service__title">UI/UX Design</h3>
-            <p className="service__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
-              metus ac nulla consequat aliquet id quis turpis.
-            </p>
-            <button className="button">Get Started</button>
-          </li>
-          <li className="service service__2">
-            <img src={bracketsSRC} alt="service" />
-            <h3 className="service__title">Front End</h3>
-            <p className="service__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
-              metus ac nulla consequat aliquet id quis turpis.
-            </p>
-            <button className="button">Get Started</button>
-          </li>
-          <li className="service service__3">
-            <img src={backendSRC} alt="service" />
-            <h3 className="service__title">Back End</h3>
-            <p className="service__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
-              metus ac nulla consequat aliquet id quis turpis.
-            </p>
-            <button className="button">Get Started</button>
-          </li>
-        </ul>
-      </section>
       <section
         className="work-section central-wrapper central-page-alignment"
         id="our-work"
