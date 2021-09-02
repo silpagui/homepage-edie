@@ -4,6 +4,17 @@ body {
   font-weight: 500;
 }
 
+.menu-button {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-button img {
+  width: 40%;
+}
+
 .header {
   padding: 42px 52px 0;
   display: flex;
@@ -459,6 +470,10 @@ body {
     width: 50%;
   }
 
+  .team-members__group img {
+    width: 100%;
+  }
+
   .footer-alignment {
     margin-bottom: 154px;
   }
@@ -480,6 +495,10 @@ body {
     display: none;
   }
 
+  .menu-button {
+    display: block;
+  }
+
   .footer__nav,
   .footer__social-media,
   .footer__contact {
@@ -491,6 +510,6 @@ body {
   }
 
   .works__item img {
-    width: 90%;
+    width: 100%;
   }
 }

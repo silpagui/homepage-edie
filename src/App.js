@@ -12,6 +12,7 @@ import person4SRC from "../src/assets/person4.png";
 import pencilSRC from "../src/assets/pencil.svg";
 import backendSRC from "../src/assets/backend.svg";
 import bracketsSRC from "../src/assets/brackets.svg";
+import navSRC from "../src/assets/nav.svg";
 
 export function App() {
   return (
@@ -21,6 +22,10 @@ export function App() {
       */}
       <header className="header central-page-alignment">
         <h1 className="header__title">Edie</h1>
+        <button className="menu-button">
+          <img src={navSRC} alt="nav button" />
+        </button>
+
         <nav className="header__nav-bar">
           <ul>
             <li>
