@@ -9,6 +9,7 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 
 .menu-button img {
@@ -429,7 +430,7 @@ body {
 
   .service {
     margin-bottom: 14px;
-    width: 341px;
+    max-width: 341px;
     margin: 0 auto;
   }
 
@@ -495,8 +496,44 @@ body {
     display: none;
   }
 
+  .header {
+    margin-bottom: 48px;
+  }
+
+  .home__highlight {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .home__title {
+    margin-bottom: 15px;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .central-col-alignment {
+    max-width: 275px;
+  }
+
   .menu-button {
     display: block;
+  }
+
+  .services-section {
+    margin-bottom: 146px;
+  }
+
+  .service {
+    width: auto;
+  }
+
+  .item-title {
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .footer__nav,
@@ -511,5 +548,50 @@ body {
 
   .works__item img {
     width: 100%;
+  }
+
+  .work-section .title {
+    margin-bottom: 48px;
+  }
+
+  .work-section__more {
+    margin-top: 36px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .work-section {
+    margin-bottom: 100px;
+  }
+
+  .home-description {
+    margin-top: 22px;
+    margin-bottom: 102px;
+  }
+  .home__title,
+  .home-description__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .home-description__title,
+  .home-description__text {
+    max-width: 270px;
+  }
+
+  .reviews-section .title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .home-description__text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .reviews-section {
+    margin-bottom: 103px;
   }
 }
